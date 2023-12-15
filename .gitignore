@@ -1,4 +1,13 @@
+
+# Dependencies
 node_modules
-./db
+
+# Database
+db/*.ts
+
+#Environment
 .env
 env.test
+
+#Build
+build
