@@ -16,7 +16,7 @@ export async function transactionsRoutes(app: FastifyInstance) {
         .where('session_id', sessionId)
         .select()
 
-      return reply.status(201).send({ transactions })
+      return reply.status(200).send({ transactions })
     },
   )
 

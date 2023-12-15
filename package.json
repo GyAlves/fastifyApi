@@ -4,19 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx watch src/server.ts",
     "lint": "eslint src --ext .ts --fix",
-    "knex": "node --no-warnings --import tsx ./node_modules/.bin/knex"
+    "knex": "node --no-warnings --import tsx ./node_modules/.bin/knex",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.1.0",
+    "@types/jest": "^29.5.11",
+    "@types/supertest": "^2.0.16",
     "eslint": "^8.55.0",
     "tsx": "^4.6.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vitest": "^1.0.4"
   },
   "dependencies": {
     "@fastify/cookie": "^9.2.0",
@@ -25,6 +28,7 @@
     "fastify": "^4.25.0",
     "knex": "^3.1.0",
     "sqlite3": "^5.1.6",
+    "supertest": "^6.3.3",
     "zod": "^3.22.4"
   }
 }
